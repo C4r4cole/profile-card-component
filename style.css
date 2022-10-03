@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+  --color1: hsl(185, 75%, 39%);
+  --color2: hsl(229, 23%, 23%);
+  --color3: hsl(227, 10%, 46%);
+  --color4: hsl(0, 0%, 59%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bg1 {
+  position: absolute;
+  top: -589px;
+  left: -400px;
+  z-index: -5;
+}
+
+.bg2 {
+  position: absolute;
+  bottom: -589px;
+  right: -400px;
+  z-index: -6;
+}
+
+body {
+  background: var(--color1);
+  font-family: "Kumbh Sans", sans-serif;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+h1 {
+  color: var(--color2);
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+h2 {
+  color: var(--color2);
+  font-size: 1.2rem;
+}
+
+p {
+  color: var(--color3);
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+main {
+  width: 25%;
+  background: white;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 6px 14px 3px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 6px 14px 3px rgba(0, 0, 0, 0.15);
+}
+
+.age {
+  color: var(--color3);
+}
+
+.images {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.profilePic {
+  width: 25%;
+  border-radius: 100%;
+  border: 4px solid white;
+  position: absolute;
+  left: 50%;
+  top: 67%;
+  transform: translateX(-50%);
+}
+
+.pattern {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.figures {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: relative;
+  margin: 30px 0 15px;
+}
+
+/* le paragraphe suivant permet d'ajouter la barre au dessus du dernier block */
+.figures::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background: var(--color4);
+  top: -15px;
+}
+
+.fig {
+  text-align: center;
+}
